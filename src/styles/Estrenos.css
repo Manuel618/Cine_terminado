@@ -140,3 +140,21 @@ body {
     width: 100%;
   }
 }
+.proximo-sinopsis {
+  color: #e6e6e6;
+  font-size: 1rem;
+  margin-top: 7px;
+  margin-bottom: 0;
+  line-height: 1.5;
+  max-width: 480px;
+}
+.proximo-sinopsis strong {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .proximo-sinopsis {
+    max-width: 100%;
+    font-size: 0.97rem;
+  }
+}
