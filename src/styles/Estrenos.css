@@ -1,0 +1,142 @@
+:root {
+  --color-bg: #e7ebfa;
+  --color-card: #232429;
+  --color-accent: #ffd600;
+  --color-chip: #2c2f36;
+  --color-text: #fafbfc;
+  --color-text-secondary: #bababa;
+  --shadow: 0 6px 32px 0 #0002, 0 1.5px 5px 0 #0001;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Titulo principal */
+.estrenos-titulo {
+  text-align: center;
+  font-size: 2.4rem;   /* Un poquito más grande */
+  color: #191919;      /* AHORA EN NEGRO */
+  margin: 36px 0 30px 0;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+/* Contenedor de la lista */
+.proximos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  max-width: 700px;
+  margin: 0 auto 48px auto;
+}
+
+/* Tarjeta */
+.proximo-item {
+  display: flex;
+  gap: 34px;
+  background: var(--color-card);
+  border-radius: 22px;
+  box-shadow: 0 3px 18px 0 #0002;
+  padding: 36px 32px;
+  align-items: center;
+  position: relative;
+}
+
+/* Imagen de la peli */
+.proximo-img {
+  width: 185px;    /* Más grande aún */
+  height: 270px;
+  object-fit: cover;
+  border-radius: 18px;
+  box-shadow: 0 1.5px 8px 0 #0001;
+  flex-shrink: 0;
+  background: #0003;
+}
+
+/* Info a la izquierda */
+.proximo-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+/* CHIP - Próximo Estreno */
+.proximo-chip {
+  display: inline-block;
+  background: #ffe300;
+  color: #181818;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 4px 16px;
+  border-radius: 18px;
+  margin-bottom: 6px;
+  box-shadow: 0 1px 8px 0 #0001;
+  letter-spacing: 1px;
+}
+
+.proximo-titulo {
+  font-size: 1.55rem;
+  color: var(--color-accent);
+  margin: 0 0 5px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.proximo-fecha {
+  font-size: 1.08rem;
+  color: #ffe596;
+  margin-bottom: 5px;
+}
+.proximo-director, .proximo-reparto, .proximo-original {
+  font-size: 1.01rem;
+  color: var(--color-text-secondary);
+  margin: 0 0 3px 0;
+}
+.proximo-director strong, .proximo-reparto strong, .proximo-original strong {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+/* ----------- RESPONSIVO ----------- */
+@media (max-width: 900px) {
+  .proximo-item {
+    gap: 18px;
+    padding: 20px 10px 18px 10px;
+  }
+  .proximo-img {
+    width: 150px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 600px) {
+  .estrenos-titulo {
+    font-size: 1.65rem;
+    margin: 24px 0 18px 0;
+  }
+  .proximos-lista {
+    padding: 0 2vw;
+  }
+  .proximo-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 12px;
+    padding: 18px 2vw 14px 2vw;
+  }
+  .proximo-img {
+    width: 165px;  /* Un poquito más grande en móvil */
+    height: 240px;
+    margin-bottom: 12px;
+  }
+  .proximo-info {
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+  }
+}

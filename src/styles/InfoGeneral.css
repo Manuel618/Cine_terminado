@@ -1,0 +1,131 @@
+body {
+  background: #f4f6fc;
+}
+
+.info-general-wrapper {
+  min-height: 100vh;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px 0 24px 0;
+}
+
+.info-card-pro {
+  background: #232946;           /* Color sólido azul oscuro */
+  border-radius: 22px;
+  box-shadow: 0 4px 24px 0 #23294638, 0 1px 6px 0 #23294610;
+  max-width: 660px;
+  width: 99vw;
+  padding: 34px 32px 32px 32px;
+  margin: 0 8px;
+  color: #f4f6fc;                /* Texto claro para contraste */
+  animation: fadeIn 0.7s;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to   { opacity: 1; transform: none;}
+}
+
+.info-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 16px;
+  gap: 6px;
+  position: relative;
+}
+
+.festival-badge {
+  background: linear-gradient(90deg, #ffe066 60%, #fff2ac 100%);
+  color: #232946;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 10px 8px 8px 0;
+  padding: 3px 17px;
+  letter-spacing: 2px;
+  margin-bottom: 2px;
+  box-shadow: 0 2px 12px 0 #ffe06680;
+}
+
+.info-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffe066;                /* Amarillo claro para destacar */
+  margin: 0;
+  line-height: 1.18;
+  letter-spacing: 1px;
+}
+
+.divider {
+  border: none;
+  border-top: 2px solid #e8eaff44;
+  margin: 16px 0 16px 0;
+  opacity: 0.45;
+}
+
+.info-section {
+  margin-bottom: 13px;
+}
+
+.info-section-title {
+  color: #ffe066;
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.cine-list {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.cine-list li {
+  margin-bottom: 7px;
+  font-size: 1rem;
+  color: #f4f6fc;
+}
+
+.cine-detail {
+  font-size: 0.97rem;
+  color: #ffe066;
+  margin-left: 0;
+}
+
+.info-section ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+.info-section li {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  color: #e7eafc;
+}
+
+@media (max-width: 700px) {
+  .info-card-pro {
+    padding: 18px 3vw 16px 3vw;
+    max-width: 99vw;
+  }
+  .info-title {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 440px) {
+  .info-card-pro {
+    padding: 7px 1vw 7px 1vw;
+    border-radius: 13px;
+  }
+  .info-title {
+    font-size: 0.95rem;
+  }
+  .festival-badge {
+    padding: 2px 9px;
+    font-size: 0.95rem;
+  }
+}

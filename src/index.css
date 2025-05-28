@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #eee;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 8px !important;
+  }
+  nav {
+    flex-direction: column !important;
+    gap: 10px;
+    align-items: flex-start !important;
+  }
+}
