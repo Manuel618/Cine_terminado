@@ -12,6 +12,7 @@ import blackPhone2Img from './../img/black phonme 2.jpg';
 const proximosEstrenos = [
   {
     titulo: "Los 4 Fantásticos",
+    sinopsis: "La primera familia de superhéroes de Marvel regresa para enfrentarse a amenazas cósmicas y unir sus fuerzas como nunca antes, en una nueva y épica aventura que reimagina sus orígenes.",
     fechaEstreno: "1 de agosto de 2025",
     duracion: "2h 12min",
     generos: "Acción, Ciencia Ficción, Aventura",
@@ -22,6 +23,7 @@ const proximosEstrenos = [
   },
   {
     titulo: "Avatar: Fire and Ash",
+    sinopsis: "Jake Sully y Neytiri deben proteger a su familia y su hogar cuando una nueva amenaza surge en Pandora, en una historia llena de espectaculares paisajes y profundas emociones.",
     fechaEstreno: "22 de agosto de 2025",
     duracion: "2h 40min",
     generos: "Acción, Aventura, Fantasía",
@@ -32,6 +34,7 @@ const proximosEstrenos = [
   },
   {
     titulo: "Five Nights at Freddy's 2",
+    sinopsis: "El terror regresa al restaurante Freddy Fazbear's Pizza. Nuevos y antiguos animatrónicos acechan en la oscuridad mientras los empleados intentan sobrevivir cada noche.",
     fechaEstreno: "13 de septiembre de 2025",
     duracion: "1h 58min",
     generos: "Terror, Misterio, Suspenso",
@@ -42,6 +45,7 @@ const proximosEstrenos = [
   },
   {
     titulo: "Fórmula 1: La Carrera Final",
+    sinopsis: "Un legendario piloto de Fórmula 1 regresa a las pistas para entrenar a un joven talento, enfrentando la presión, la velocidad y la rivalidad en el circuito más desafiante del mundo.",
     fechaEstreno: "27 de septiembre de 2025",
     duracion: "1h 46min",
     generos: "Acción, Drama, Deporte",
@@ -52,6 +56,7 @@ const proximosEstrenos = [
   },
   {
     titulo: "Jurassic World: New Era",
+    sinopsis: "En un mundo donde los dinosaurios coexisten con los humanos, la humanidad debe adaptarse o arriesgarse a desaparecer, mientras nuevas especies y peligros surgen en la Tierra.",
     fechaEstreno: "18 de octubre de 2025",
     duracion: "2h 20min",
     generos: "Aventura, Ciencia Ficción",
@@ -62,6 +67,7 @@ const proximosEstrenos = [
   },
   {
     titulo: "Superman: Legacy",
+    sinopsis: "Clark Kent explora su herencia kryptoniana y humana mientras busca inspirar esperanza como Superman en una nueva era para el universo DC.",
     fechaEstreno: "31 de octubre de 2025",
     duracion: "2h 10min",
     generos: "Acción, Aventura, Fantasía",
@@ -72,6 +78,7 @@ const proximosEstrenos = [
   },
   {
     titulo: "Zootopia 2",
+    sinopsis: "Judy Hopps y Nick Wilde deben resolver un nuevo misterio en la vibrante ciudad de Zootopia, donde todos los animales conviven en una gran metrópolis llena de sorpresas.",
     fechaEstreno: "15 de noviembre de 2025",
     duracion: "1h 48min",
     generos: "Animación, Comedia, Familiar",
@@ -82,6 +89,7 @@ const proximosEstrenos = [
   },
   {
     titulo: "Black Phone 2",
+    sinopsis: "Tras los inquietantes sucesos originales, nuevas llamadas y fenómenos sobrenaturales atormentan a una nueva víctima, mientras el terror y el suspenso vuelven a intensificarse.",
     fechaEstreno: "29 de noviembre de 2025",
     duracion: "1h 55min",
     generos: "Terror, Thriller",
@@ -118,6 +126,9 @@ export default function Estrenos() {
               </p>
               <p className="proximo-original">
                 <strong>Título original</strong> {peli.tituloOriginal}
+              </p>
+              <p className="proximo-sinopsis">
+                <strong>Sinopsis:</strong> {peli.sinopsis}
               </p>
             </div>
           </div>
