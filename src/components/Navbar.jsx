@@ -31,12 +31,7 @@ export default function Navbar({ setModulo, modulo }) {
         >
           Cartelera
         </button>
-        <button
-          onClick={() => handleNavClick("reservas")}
-          className={modulo === "reservas" ? "active" : ""}
-        >
-          Reservas
-        </button>
+       
         <button
           onClick={() => handleNavClick("estrenos")}
           className={modulo === "estrenos" ? "active" : ""}
