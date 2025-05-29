@@ -366,21 +366,18 @@ body {
     letter-spacing: 0.03em;
     font-weight: 600;
   }
+
+  /* MODIFICACIÓN: Botón centrado y más pequeño en móviles */
   .cartelera-btn {
-    width: 100%;
-    padding: 17px 0;
-    font-size: 1.16rem;
-    margin-top: 10px;
-    border-radius: 12px;
-    font-weight: 800;
-    letter-spacing: 0.07em;
-    align-self: flex-start;
-    background: linear-gradient(92deg, #2e55e7 20%, #26baf6 100%);
-    color: #fff;
-    border: none;
-    box-shadow: 0 2px 18px #25bafd35, 0 1px 6px #162a4812;
-    cursor: pointer;
-    transition: background 0.13s, transform 0.14s, box-shadow 0.16s;
+    width: 70%;
+    margin: 16px auto 0 auto;
+    display: block;
+    padding: 11px 0;
+    font-size: 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    align-self: unset; /* Sobrescribe el align-self anterior */
   }
   .cartelera-btn:active,
   .cartelera-btn:focus {
