@@ -18,7 +18,7 @@
   box-shadow: var(--nav-shadow);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 9999; /* <-- ¡Aquí solo subí el z-index! */
   min-height: 38px;
 }
 
@@ -64,7 +64,7 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 200;
+  z-index: 10000; /* <-- Aquí también por si usas el menú hamburguesa */
   margin-left: 10px;
   gap: 4px;
   transition: background var(--transition);
@@ -129,7 +129,7 @@
     opacity: 0;
     pointer-events: none;
     transition: transform var(--transition), opacity var(--transition);
-    z-index: 51;
+    z-index: 9999; /* <-- Aquí también para el menú desplegado en móvil */
   }
   .navbar-links.active {
     transform: translateY(0) scaleY(1);
