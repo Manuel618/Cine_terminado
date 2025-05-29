@@ -112,9 +112,10 @@ const salaTagClass = (sala) => {
   return "";
 };
 
-export default function Cartelera() {
+// Recibe setModulo por props
+export default function Cartelera({ setModulo }) {
   const handleComprar = (titulo) => {
-    alert(`Comprar boletos para "${titulo}"`);
+    setModulo("reservas");
   };
 
   return (
